@@ -7,6 +7,14 @@ import useMinimalBlogConfig from "../hooks/use-minimal-blog-config"
 import replaceSlashes from "../utils/replaceSlashes"
 import Seo from "./seo"
 
+export type Props = {
+  data: {
+    allPost: any
+    [key: string]: string
+  }
+  [key: string]: any
+}
+
 export type MBBlogProps = {
   posts: {
     slug: string
@@ -22,11 +30,15 @@ export type MBBlogProps = {
   }[]
 }
 
-const Blog = ({ posts }: MBBlogProps) => {
+const Blog = ({ ...props }: Props) => {
   const { tagsPath, basePath } = useMinimalBlogConfig()
+  const {
+    data: { allPost },
+  } = props
+  const posts: MBBlogProps = allPost.nodes;
 
   return (
-    <Layout>
+    <Layout {...props}>
       <Flex sx={{ alignItems: `center`, justifyContent: `space-between`, flexFlow: `wrap` }}>
         <Heading as="h1" variant="styles.h1" sx={{ marginY: 2 }}>
           Blog

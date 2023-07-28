@@ -49,6 +49,7 @@ const Homepage = ({ ...props }: Props) => {
 
   const posts: MBHomepageProps = allPost.nodes;
 
+  // TODO: Figure out why TS is complaining about posts being an incompatible type
   return (
     <Layout {...props}>
       <h1 sx={visuallyHidden}>{siteTitle}</h1>
