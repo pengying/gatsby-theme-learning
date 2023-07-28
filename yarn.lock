@@ -2666,9 +2666,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@lekoarts/gatsby-theme-minimal-blog-core@npm:^6.1.2":
-  version: 6.1.2
-  resolution: "@lekoarts/gatsby-theme-minimal-blog-core@npm:6.1.2"
+"@lekoarts/gatsby-theme-minimal-blog-core@workspace:^, @lekoarts/gatsby-theme-minimal-blog-core@workspace:themes/gatsby-theme-minimal-blog-core":
+  version: 0.0.0-use.local
+  resolution: "@lekoarts/gatsby-theme-minimal-blog-core@workspace:themes/gatsby-theme-minimal-blog-core"
   dependencies:
     "@lekoarts/rehype-meta-as-attributes": ^3.0.0
     "@lekoarts/themes-utils": ^3.0.0
@@ -2684,9 +2684,8 @@ __metadata:
     gatsby: ^5.5.0
     react: ^18.0.0
     react-dom: ^18.0.0
-  checksum: 17e6c93b7d015153dd763770c4e9179df81272df6b28a99b5834f3a7bab37433ac90d563b0042465a9be7539d5c9f52060ef0d65260d6117f2864f7b032c81fc
-  languageName: node
-  linkType: hard
+  languageName: unknown
+  linkType: soft
 
 "@lekoarts/gatsby-themes@workspace:.":
   version: 0.0.0-use.local
@@ -3439,7 +3438,7 @@ __metadata:
   dependencies:
     "@emotion/react": ^11.11.0
     "@fontsource/merriweather": ^5.0.5
-    "@lekoarts/gatsby-theme-minimal-blog-core": ^6.1.2
+    "@lekoarts/gatsby-theme-minimal-blog-core": "workspace:^"
     "@lekoarts/rehype-meta-as-attributes": ^3.0.0
     "@lekoarts/themes-utils": ^3.0.0
     "@mdx-js/react": ^2.3.0

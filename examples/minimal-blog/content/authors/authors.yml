@@ -1,0 +1,8 @@
+- name: Peng Ying
+  bio: |
+    TODO: Write stuff about me
+  avatar: ./avatars/peng-ying.jpg
+  featured: true
+  social:
+    - url: https://linkedin.com/pying
+    - url: mailto:peng.ying@gmail.com

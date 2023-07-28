@@ -1,17 +1,12 @@
-<p align="center">
-  <a href="https://themes.lekoarts.de">
-    <img alt="Gatsby Theme" src="https://img.lekoarts.de/gatsby/gatsby-themes-illustration.png" />
-  </a>
-</p>
 <h1 align="center">
-  @lekoarts/gatsby-theme-minimal-blog
+  @pengying/gatsby-theme-novela
 </h1>
 
 <p align="center">
   <a href="https://github.com/LekoArts/gatsby-themes/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="@lekoarts/gatsby-theme-minimal-blog is released under the MIT license." />
   </a>
-  <a href="https://www.npmjs.org/package/@lekoarts/gatsby-theme-minimal-blog">
+  <!-- <a href="https://www.npmjs.org/package/@lekoarts/gatsby-theme-minimal-blog">
     <img src="https://img.shields.io/npm/v/@lekoarts/gatsby-theme-minimal-blog.svg" alt="Current npm package version." />
   </a>
   <a href="https://npmcharts.com/compare/@lekoarts/gatsby-theme-minimal-blog?minimal=true">
@@ -25,10 +20,9 @@
   </a>
   <a href="https://twitter.com/intent/follow?screen_name=lekoarts_de">
     <img src="https://img.shields.io/twitter/follow/lekoarts_de.svg?label=Follow%20@lekoarts_de" alt="Follow @lekoarts_de" />
-  </a>
+  </a> -->
 </p>
-
-Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and line highlighting.
+Updating the beautiful Novela theme built by Narative for the latest Gatsby, React, etc.  
 
 [![Live Preview](https://img.lekoarts.de/gatsby/preview.svg)](https://minimal-blog.lekoarts.de) [![View Design on Figma](https://img.lekoarts.de/gatsby/view_design.svg)](https://www.figma.com/file/sq2VwMy8579ioDTXjUdlYr/gatsby-theme-minimal-blog?node-id=0%3A1)
 

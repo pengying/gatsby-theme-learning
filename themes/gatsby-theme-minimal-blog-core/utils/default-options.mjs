@@ -4,7 +4,6 @@ export const withDefaults = (themeOptions) => {
   const postsPath = themeOptions.postsPath || `content/posts`
   const postsPrefix = themeOptions.postsPrefix || `/`
   const pagesPath = themeOptions.pagesPath || `content/pages`
-  const authorsPath = themeOptions.authorsPath || `content/authors`
   const tagsPath = themeOptions.tagsPath || `/tags`
   const externalLinks = themeOptions.externalLinks || []
   const navigation = themeOptions.navigation || []
@@ -13,10 +12,8 @@ export const withDefaults = (themeOptions) => {
   const formatString = themeOptions.formatString || `DD.MM.YYYY`
   const mdx = typeof themeOptions.mdx === `undefined` ? true : themeOptions.mdx
   const sharp = typeof themeOptions.sharp === `undefined` ? true : themeOptions.sharp
-  const mermaidTheme = themeOptions.mermaidTheme || 'neutral';
 
   return {
-    authorsPath,
     basePath,
     blogPath,
     postsPath,
@@ -30,6 +27,5 @@ export const withDefaults = (themeOptions) => {
     formatString,
     mdx,
     sharp,
-    mermaidTheme,
   }
 }

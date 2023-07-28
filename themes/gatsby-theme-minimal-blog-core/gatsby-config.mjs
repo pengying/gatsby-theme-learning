@@ -1,28 +1,12 @@
-import path from "path"
-import rehypeMetaAsAttributes from "@lekoarts/rehype-meta-as-attributes"
 import remarkGfm from "remark-gfm"
-
-import { fileURLToPath } from "url"
+import rehypeMetaAsAttributes from "@lekoarts/rehype-meta-as-attributes"
 import { withDefaults } from "./utils/default-options.mjs"
 
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url))
-
 const config = (themeOptions) => {
-    const options = withDefaults(themeOptions)
-    return {
-      siteMetadata: {
-      siteTitle: `Novela Theme Blog`,
-      siteTitleAlt: `Novela Theme Blog - @pengying/novela`,
-      siteHeadline: `Novela Theme Blog - Novela Theme from @pengying`,
-      siteUrl: `https://incremental.fyi`,
-      siteDescription: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and line highlighting.`,
-      siteImage: `/banner.jpg`,
-      siteLanguage: `en`,
-      author: `@pengying`,
-    },
-    plugins: [
+  const options = withDefaults(themeOptions)
 
+  return {
+    plugins: [
       {
         resolve: `gatsby-source-filesystem`,
         options: {
@@ -44,22 +28,6 @@ const config = (themeOptions) => {
           path: `./src/@lekoarts`,
         },
       },
-      {
-        resolve: `gatsby-source-filesystem`,
-        options: {
-          name: options.authorsPath,
-          path: options.authorsPath,
-        },
-      },
-      {
-        resolve: `gatsby-source-filesystem`,
-        options: {
-          name: `texts`,
-          path: `${__dirname}/src/texts`,
-        },
-      },
-      `gatsby-plugin-catch-links`,
-      `gatsby-plugin-theme-ui`,
       options.mdx && {
         resolve: `gatsby-plugin-mdx`,
         options: {
@@ -79,7 +47,12 @@ const config = (themeOptions) => {
               },
             },
             {
-              resolve: `gatsby-remark-mermaid`
+              resolve: `gatsby-remark-mermaid`,
+              options: {
+                mermaidOptions: {
+                  theme: options.mermaidTheme,
+                },
+              }
             }
           ],
         },
@@ -89,7 +62,7 @@ const config = (themeOptions) => {
         resolve: `gatsby-plugin-sharp`,
         options: {},
       },
-    ].filter(Boolean), // Shortcut to remove null elements from array
+    ].filter(Boolean),
   }
 }
 
