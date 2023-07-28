@@ -2666,27 +2666,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@lekoarts/gatsby-theme-minimal-blog-core@workspace:^, @lekoarts/gatsby-theme-minimal-blog-core@workspace:themes/gatsby-theme-minimal-blog-core":
-  version: 0.0.0-use.local
-  resolution: "@lekoarts/gatsby-theme-minimal-blog-core@workspace:themes/gatsby-theme-minimal-blog-core"
-  dependencies:
-    "@lekoarts/rehype-meta-as-attributes": ^3.0.0
-    "@lekoarts/themes-utils": ^3.0.0
-    "@mdx-js/react": ^2.3.0
-    gatsby-plugin-mdx: ^5.10.0
-    gatsby-plugin-sharp: ^5.10.0
-    gatsby-remark-images: ^7.10.0
-    gatsby-source-filesystem: ^5.10.0
-    gatsby-transformer-sharp: ^5.10.0
-    reading-time: ^1.5.0
-    remark-gfm: ^3.0.1
-  peerDependencies:
-    gatsby: ^5.5.0
-    react: ^18.0.0
-    react-dom: ^18.0.0
-  languageName: unknown
-  linkType: soft
-
 "@lekoarts/gatsby-themes@workspace:.":
   version: 0.0.0-use.local
   resolution: "@lekoarts/gatsby-themes@workspace:."
@@ -3438,7 +3417,6 @@ __metadata:
   dependencies:
     "@emotion/react": ^11.11.0
     "@fontsource/merriweather": ^5.0.5
-    "@lekoarts/gatsby-theme-minimal-blog-core": "workspace:^"
     "@lekoarts/rehype-meta-as-attributes": ^3.0.0
     "@lekoarts/themes-utils": ^3.0.0
     "@mdx-js/react": ^2.3.0
@@ -5952,7 +5930,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astring@npm:^1.8.0, astring@npm:^1.8.4, astring@npm:^1.8.5":
+"astring@npm:^1.8.0, astring@npm:^1.8.5":
   version: 1.8.6
   resolution: "astring@npm:1.8.6"
   bin:
@@ -11122,39 +11100,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-mdx@npm:^5.10.0":
-  version: 5.10.0
-  resolution: "gatsby-plugin-mdx@npm:5.10.0"
-  dependencies:
-    "@mdx-js/mdx": ^2.3.0
-    acorn: ^8.8.2
-    acorn-jsx: ^5.3.2
-    astring: ^1.8.4
-    deepmerge: ^4.3.1
-    estree-util-build-jsx: ^2.2.2
-    fs-extra: ^11.1.1
-    gatsby-core-utils: ^4.10.0
-    gatsby-plugin-utils: ^4.10.0
-    gray-matter: ^4.0.3
-    mdast-util-mdx: ^2.0.1
-    mdast-util-to-hast: ^10.2.0
-    mdast-util-to-markdown: ^1.5.0
-    mdast-util-toc: ^6.1.1
-    rehype-infer-description-meta: ^1.1.0
-    remark-unwrap-images: ^3.0.1
-    unified: ^10.1.2
-    unist-util-visit: ^4.1.2
-    vfile: ^5.3.7
-  peerDependencies:
-    "@mdx-js/react": ^2.0.0
-    gatsby: ^5.0.0-next
-    gatsby-source-filesystem: ^5.0.0-next
-    react: ^18.0.0 || ^0.0.0
-    react-dom: ^18.0.0 || ^0.0.0
-  checksum: 25c549003adefcdc9ce71ac36b55dde9f480616812774af0cd7b2ed5e5e9bcbff5ff2364911dc54fd66c6caadbd098e169b0eb78207b76e7d83fe236cd85786a
-  languageName: node
-  linkType: hard
-
 "gatsby-plugin-mdx@npm:^5.11.0":
   version: 5.11.0
   resolution: "gatsby-plugin-mdx@npm:5.11.0"
@@ -11207,28 +11152,6 @@ __metadata:
   peerDependencies:
     gatsby: ^5.0.0-next
   checksum: 9648581f8ab2ff1741253ea3c8fbc303abc9bacb0e01dd0450371d78fffe58d8ba08128e15d5e50c432cc573fcdb745e40b4726486f04207adc4cfd8620ab852
-  languageName: node
-  linkType: hard
-
-"gatsby-plugin-sharp@npm:^5.10.0":
-  version: 5.10.0
-  resolution: "gatsby-plugin-sharp@npm:5.10.0"
-  dependencies:
-    "@babel/runtime": ^7.20.13
-    async: ^3.2.4
-    bluebird: ^3.7.2
-    debug: ^4.3.4
-    filenamify: ^4.3.0
-    fs-extra: ^11.1.1
-    gatsby-core-utils: ^4.10.0
-    gatsby-plugin-utils: ^4.10.0
-    lodash: ^4.17.21
-    probe-image-size: ^7.2.3
-    semver: ^7.5.0
-    sharp: ^0.32.1
-  peerDependencies:
-    gatsby: ^5.0.0-next
-  checksum: ff18b75a70cc6e889d81fc014492f4a9a750cdb81c86a9ef38e5712cbedfeb1190d1bb0280b71047edb507eefbd069aeca413de679f7f525fef246e1322d795f
   languageName: node
   linkType: hard
 
@@ -11367,27 +11290,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-remark-images@npm:^7.10.0":
-  version: 7.10.0
-  resolution: "gatsby-remark-images@npm:7.10.0"
-  dependencies:
-    "@babel/runtime": ^7.20.13
-    chalk: ^4.1.2
-    cheerio: ^1.0.0-rc.10
-    gatsby-core-utils: ^4.10.0
-    is-relative-url: ^3.0.0
-    lodash: ^4.17.21
-    mdast-util-definitions: ^4.0.0
-    query-string: ^6.14.1
-    unist-util-select: ^3.0.4
-    unist-util-visit-parents: ^3.1.1
-  peerDependencies:
-    gatsby: ^5.0.0-next
-    gatsby-plugin-sharp: ^5.0.0-next
-  checksum: c13a0c26c65c058832c43254c73a1fdcea8394f34f181056f75566a409523b5dfcd1f1fb2a15270b33e8a8600ced37d9b21335fb381f6f20a6b3dc970cda7bb1
-  languageName: node
-  linkType: hard
-
 "gatsby-remark-images@npm:^7.11.0":
   version: 7.11.0
   resolution: "gatsby-remark-images@npm:7.11.0"
@@ -11445,25 +11347,6 @@ __metadata:
   dependencies:
     sharp: ^0.32.1
   checksum: 966ad189135b5aae97f01af5a737755198ac28ebae6fcc9e3ad4dcf9f81354c6d094156fcb8177908c6b46f098963b2567d43c4c30d30675818fa4039db412ce
-  languageName: node
-  linkType: hard
-
-"gatsby-source-filesystem@npm:^5.10.0":
-  version: 5.10.0
-  resolution: "gatsby-source-filesystem@npm:5.10.0"
-  dependencies:
-    "@babel/runtime": ^7.20.13
-    chokidar: ^3.5.3
-    file-type: ^16.5.4
-    fs-extra: ^11.1.1
-    gatsby-core-utils: ^4.10.0
-    mime: ^3.0.0
-    pretty-bytes: ^5.6.0
-    valid-url: ^1.0.9
-    xstate: ^4.37.2
-  peerDependencies:
-    gatsby: ^5.0.0-next
-  checksum: 10b3d187556b89e99930038e5dede24528372f70496b2cd7610350e932403f58804c74b14391bb82b249c713dbd3546fa6df3ecb1369a470e6c36bfca977b38c
   languageName: node
   linkType: hard
 
@@ -11535,25 +11418,6 @@ __metadata:
   peerDependencies:
     gatsby: ^5.0.0-next
   checksum: c1a3b3384e21e53b58a218b8b2e9b757064392870cd95d4d14163ee519bc17cbb0e543323c2804618625048ca2818e6b98f28a90673482d13698632dfc1c519c
-  languageName: node
-  linkType: hard
-
-"gatsby-transformer-sharp@npm:^5.10.0":
-  version: 5.10.0
-  resolution: "gatsby-transformer-sharp@npm:5.10.0"
-  dependencies:
-    "@babel/runtime": ^7.20.13
-    bluebird: ^3.7.2
-    common-tags: ^1.8.2
-    fs-extra: ^11.1.1
-    gatsby-plugin-utils: ^4.10.0
-    probe-image-size: ^7.2.3
-    semver: ^7.5.0
-    sharp: ^0.32.1
-  peerDependencies:
-    gatsby: ^5.0.0-next
-    gatsby-plugin-sharp: ^5.0.0-next
-  checksum: bb43d2269190e48d2fca9abdc5a6d92ff1b1a93e75881441985a9be2630a508537abe96bb33726b4208bb2dbbb7a4d2c220dd788200312e7dcd21a53ba2bb11c
   languageName: node
   linkType: hard
 

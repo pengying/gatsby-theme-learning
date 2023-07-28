@@ -1,5 +1,5 @@
 import * as React from "react"
-import Homepage, { Head } from "../../../components/homepage"
+import Homepage, { Head } from "./homepage"
 
 type Props = {
   data: {

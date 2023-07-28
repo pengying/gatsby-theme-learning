@@ -1,5 +1,5 @@
 import { graphql } from "gatsby"
-import HomepageComponent, { Head } from "../components/homepage"
+import HomepageComponent, { Head } from "../components/homepage-wrapper"
 
 export default HomepageComponent
 

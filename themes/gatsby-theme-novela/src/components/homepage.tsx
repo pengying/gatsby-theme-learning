@@ -1,4 +1,5 @@
 /** @jsx jsx */
+import * as React from "react";
 import { jsx } from "theme-ui"
 import { HeadFC, Link } from "gatsby"
 import Layout from "./layout"
@@ -12,6 +13,14 @@ import { visuallyHidden } from "../styles/utils"
 import Seo from "./seo"
 import Hero from "../texts/hero.mdx"
 import Bottom from "../texts/bottom.mdx"
+
+type Props = {
+  data: {
+    allPost: any
+    [key: string]: string
+  }
+  [key: string]: any
+}
 
 export type MBHomepageProps = {
   posts: {
@@ -31,7 +40,6 @@ export type MBHomepageProps = {
 const Homepage = ({ posts }: MBHomepageProps) => {
   const { basePath, blogPath } = useMinimalBlogConfig()
   const { siteTitle } = useSiteMetadata()
-
   return (
     <Layout>
       <h1 sx={visuallyHidden}>{siteTitle}</h1>
