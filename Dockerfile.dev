@@ -1,0 +1,24 @@
+FROM node:alpine
+
+# Also exposing VSCode debug ports
+EXPOSE 8000 9929 9230
+
+RUN \
+  apk add --no-cache python3 make g++ && \
+  apk add vips-dev libvips fftw-dev --update-cache \
+  --repository http://dl-3.alpinelinux.org/alpine/edge/community \
+  --repository http://dl-3.alpinelinux.org/alpine/edge/main \
+ && rm -fR /var/cache/apk/*
+
+RUN apk add automake autoconf libtool nasm
+
+RUN npm install -g gatsby-cli
+WORKDIR /opt/incremental_blog
+
+COPY ./app/package.json .
+
+RUN npm install
+
+RUN npm install --ignore-scripts=false --foreground-scripts --verbose--platform=linuxmusl --arch=x64 sharp
+
+CMD ["gatsby", "develop", "-H", "0.0.0.0" ]
