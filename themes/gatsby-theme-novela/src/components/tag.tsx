@@ -44,12 +44,11 @@ export type MBTagProps = {
 const Tag = ({...props }: Props) => {
   const { tagsPath, basePath } = useMinimalBlogConfig()
   const {
-    data: { allPost },
-    pageContext: { pageContext }
+    data: { allPost }
   } = props
 
   const posts = allPost.nodes;
-
+  const pageContext = props.pageContext;
 
   return (
     <Layout {...props}>
