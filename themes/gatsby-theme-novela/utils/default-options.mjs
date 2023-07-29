@@ -13,7 +13,7 @@ export const withDefaults = (themeOptions) => {
   const formatString = themeOptions.formatString || `DD.MM.YYYY`
   const mdx = typeof themeOptions.mdx === `undefined` ? true : themeOptions.mdx
   const sharp = typeof themeOptions.sharp === `undefined` ? true : themeOptions.sharp
-  const mermaidTheme = themeOptions.mermaidTheme || 'neutral';
+  const mermaidTheme = themeOptions.mermaidTheme || 'dark';
 
   return {
     authorsPath,

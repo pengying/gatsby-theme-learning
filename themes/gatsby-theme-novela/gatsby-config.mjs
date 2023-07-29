@@ -79,7 +79,10 @@ const config = (themeOptions) => {
               },
             },
             {
-              resolve: `gatsby-remark-mermaid`
+              resolve: `gatsby-remark-mermaid`,
+              options: {
+                theme: options.mermaidTheme,
+              }
             }
           ],
         },
