@@ -3420,6 +3420,7 @@ __metadata:
     "@lekoarts/rehype-meta-as-attributes": ^3.0.0
     "@lekoarts/themes-utils": ^3.0.0
     "@mdx-js/react": ^2.3.0
+    "@playwright/test": ^1.36.2
     "@theme-ui/color": ~0.15.3
     "@theme-ui/mdx": ~0.15.3
     "@theme-ui/preset-tailwind": 0.15.3
@@ -3461,6 +3462,22 @@ __metadata:
     tiny-glob: ^0.2.9
     tslib: ^2.4.0
   checksum: 118a1971120253740121a1db0a6658c21195b7da962acf9c124b507a3df707cfc97b0b84a16edcbd4352853b182e8337da9fc6e8e3d06c60d75ae4fb42321c75
+  languageName: node
+  linkType: hard
+
+"@playwright/test@npm:^1.36.2":
+  version: 1.36.2
+  resolution: "@playwright/test@npm:1.36.2"
+  dependencies:
+    "@types/node": "*"
+    fsevents: 2.3.2
+    playwright-core: 1.36.2
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  bin:
+    playwright: cli.js
+  checksum: 659304e0bbbafb2fa36395fbd8bd2c5db2b7791bbb55fa62409946ec7ec726cf8fff89f2b8a1a74fe831bf50a8780a37a5322a1251a6f7db2a9220a57ac408f0
   languageName: node
   linkType: hard
 
@@ -10821,7 +10838,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fsevents@npm:~2.3.2":
+"fsevents@npm:2.3.2, fsevents@npm:~2.3.2":
   version: 2.3.2
   resolution: "fsevents@npm:2.3.2"
   dependencies:
@@ -10831,7 +10848,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fsevents@patch:fsevents@~2.3.2#~builtin<compat/fsevents>":
+"fsevents@patch:fsevents@2.3.2#~builtin<compat/fsevents>, fsevents@patch:fsevents@~2.3.2#~builtin<compat/fsevents>":
   version: 2.3.2
   resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"
   dependencies:
@@ -17576,7 +17593,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"playwright-core@npm:^1.0.0":
+"playwright-core@npm:1.36.2, playwright-core@npm:^1.0.0":
   version: 1.36.2
   resolution: "playwright-core@npm:1.36.2"
   bin:

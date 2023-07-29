@@ -25,6 +25,7 @@
     "@lekoarts/rehype-meta-as-attributes": "^3.0.0",
     "@lekoarts/themes-utils": "^3.0.0",
     "@mdx-js/react": "^2.3.0",
+    "@playwright/test": "^1.36.2",
     "@theme-ui/color": "~0.15.3",
     "@theme-ui/mdx": "~0.15.3",
     "@theme-ui/preset-tailwind": "0.15.3",
