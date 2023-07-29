@@ -8,6 +8,18 @@ import useMinimalBlogConfig from "../hooks/use-minimal-blog-config"
 import Seo from "./seo"
 import replaceSlashes from "../utils/replaceSlashes"
 
+type Props = {
+  data: {
+    allPost: {
+      group: {
+        fieldValue: string
+        totalCount: number
+      }[]
+    }
+  }
+  [key: string]: any
+}
+
 export type MBTagsProps = {
   list: {
     fieldValue: string
@@ -15,9 +27,15 @@ export type MBTagsProps = {
   }[]
 }
 
-const Tags = ({ list }: MBTagsProps) => {
+const Tags = ({ ...props }: Props) => {
   const { tagsPath, basePath } = useMinimalBlogConfig()
 
+  const {
+    data: { allPost },
+  } = props
+
+  const list = allPost.group;
+  
   return (
     <Layout>
       <Heading as="h1" variant="styles.h1">

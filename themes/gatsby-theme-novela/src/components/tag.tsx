@@ -7,6 +7,20 @@ import Listing from "./listing"
 import replaceSlashes from "../utils/replaceSlashes"
 import Seo from "./seo"
 
+type Props = {
+  data: {
+    allPost: any
+    [key: string]: any
+  }
+  pageContext: {
+    isCreatedByStatefulCreatePages: boolean
+    slug: string
+    name: string
+    [key: string]: any
+  }
+  [key: string]: any
+}
+
 export type MBTagProps = {
   posts: {
     slug: string
@@ -27,11 +41,18 @@ export type MBTagProps = {
   }
 }
 
-const Tag = ({ posts, pageContext }: MBTagProps) => {
+const Tag = ({...props }: Props) => {
   const { tagsPath, basePath } = useMinimalBlogConfig()
+  const {
+    data: { allPost },
+    pageContext: { pageContext }
+  } = props
+
+  const posts = allPost.nodes;
+
 
   return (
-    <Layout>
+    <Layout {...props}>
       <Flex sx={{ alignItems: `center`, justifyContent: `space-between`, flexFlow: `wrap` }}>
         <Heading as="h1" variant="styles.h1" sx={{ marginY: 2 }}>
           {pageContext.name}
