@@ -1,6 +1,19 @@
 import { merge, ThemeUIStyleObject } from "theme-ui"
 import tailwind from "@theme-ui/preset-tailwind"
 import { lightThemeVars, darkThemeVars } from "../utils/prism-themes"
+import colors from './colors';
+import tags from './tags';
+import mediaqueries from "../styles/media";
+
+const fonts = {
+  serif: "'Merriweather', Georgia, Serif",
+  sansSerif:
+    "'SF Pro Display', '-apple-system', 'BlinkMacSystemFont', 'San Francisco', 'Helvetica Neue', 'Helvetica', 'Ubuntu', 'Roboto', 'Noto', 'Segoe UI', 'Arial', sans-serif",
+  monospace: `"Operator Mono", Consolas, Menlo, Monaco, source-code-pro, Courier New, monospace`,
+};
+
+const colorModeTransition =
+  'background 0.25s var(--ease-in-out-quad), color 0.25s var(--ease-in-out-quad)';
 
 declare module "theme-ui" {
   interface Theme {
@@ -13,33 +26,37 @@ const theme = merge(tailwind, {
   config: {
     initialColorModeName: `light`,
   },
-  colors: {
-    primary: tailwind.colors.purple[7],
-    secondary: `#5f6c80`,
-    toggleIcon: tailwind.colors.gray[8],
-    heading: tailwind.colors.black,
-    divide: tailwind.colors.gray[4],
-    muted: tailwind.colors.gray[2],
-    highlightLineBg: `rgba(0, 0, 0, 0.035)`,
-    ...lightThemeVars,
-    modes: {
-      dark: {
-        text: tailwind.colors.gray[4],
-        primary: tailwind.colors.purple[4],
-        secondary: `#8a9ab0`,
-        toggleIcon: tailwind.colors.gray[4],
-        background: `#1A202C`,
-        heading: tailwind.colors.white,
-        divide: tailwind.colors.gray[8],
-        muted: tailwind.colors.gray[8],
-        highlightLineBg: `rgba(255, 255, 255, 0.1)`,
-        ...darkThemeVars,
-      },
-    },
-  },
-  fonts: {
-    body: `-apple-system, BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"`,
-  },
+// TODO(peng): figure out break points with media queries
+  // breakpoints: mediaqueries(breakpoints),
+  colors,
+  // colors: {
+  //   primary: tailwind.colors.purple[7],
+  //   secondary: `#5f6c80`,
+  //   toggleIcon: tailwind.colors.gray[8],
+  //   heading: tailwind.colors.black,
+  //   divide: tailwind.colors.gray[4],
+  //   muted: tailwind.colors.gray[2],
+  //   highlightLineBg: `rgba(0, 0, 0, 0.035)`,
+  //   ...lightThemeVars,
+  //   modes: {
+  //     dark: {
+  //       text: tailwind.colors.gray[4],
+  //       primary: tailwind.colors.purple[4],
+  //       secondary: `#8a9ab0`,
+  //       toggleIcon: tailwind.colors.gray[4],
+  //       background: `#1A202C`,
+  //       heading: tailwind.colors.white,
+  //       divide: tailwind.colors.gray[8],
+  //       muted: tailwind.colors.gray[8],
+  //       highlightLineBg: `rgba(255, 255, 255, 0.1)`,
+  //       ...darkThemeVars,
+  //     },
+  //   },
+  // },
+  fonts,
+  // fonts: {
+  //   body: `-apple-system, BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"`,
+  // },
   styles: {
     root: {
       color: `text`,

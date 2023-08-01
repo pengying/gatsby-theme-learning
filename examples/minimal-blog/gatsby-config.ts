@@ -16,6 +16,16 @@ const config: GatsbyConfig = {
     siteImage: `/banner.jpg`,
     siteLanguage: `en`,
     author: `@pengying`,
+    name: `Incremental`,
+    social: [
+      {
+        name: `twitter`,
+        url: `https://twitter.com/pengying`,
+      },{
+        name: `github`,
+        url: `https://github.com/pengying`,
+      }
+    ]
   },  
   trailingSlash: `never`,
   plugins: [

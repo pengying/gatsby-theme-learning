@@ -11,6 +11,11 @@ type UseSiteMetadataProps = {
       siteImage: string
       siteLanguage: string
       author: string
+      name: string
+      social: [{
+        name: string
+        url: string
+      }]
       [key: string]: unknown
     }
   }
@@ -28,7 +33,12 @@ const useSiteMetadata = () => {
           siteDescription
           siteImage
           siteLanguage
+          social {
+            name
+            url
+          }
           author
+          name
         }
       }
     }
