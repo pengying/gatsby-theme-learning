@@ -26,8 +26,8 @@ const Footer = () => {
   const postQuery = useStaticQuery<PostQueryProps>(graphql`
   {
     allMdx(
-      filter: { frontmatter: { date: { ne: null } } }
-    ) {
+        filter: { frontmatter: { author: { ne: null } } }
+      ){
       edges {
         node {
           frontmatter {
@@ -40,7 +40,7 @@ const Footer = () => {
 
   const copyrightDate = (() => {
     const { edges } = postQuery.allMdx;
-    debugger;
+
     const years = [0, edges.length - 1].map((edge) =>
       new Date(edges[edge].node.frontmatter.date).getUTCFullYear()
     );
@@ -65,7 +65,7 @@ const Footer = () => {
       >
         <FooterGradient />
         <div>
-          &copy; {new Date().getFullYear()} by {siteTitle}. All rights reserved.
+          &copy; {copyrightDate} {name}
         </div>
         <div>
 
