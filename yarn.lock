@@ -3451,15 +3451,13 @@ __metadata:
     "@lekoarts/themes-utils": ^3.0.0
     "@mdx-js/react": ^2.3.0
     "@playwright/test": ^1.36.2
-    "@theme-ui/color": ~0.15.3
-    "@theme-ui/mdx": ~0.15.3
-    "@theme-ui/preset-tailwind": 0.15.3
-    "@types/react": 18
-    "@types/react-dom": 18
+    "@theme-ui/color": ^0.16.0
+    "@theme-ui/mdx": ^0.16.0
+    "@theme-ui/preset-tailwind": ^0.16.0
     gatsby-plugin-catch-links: ^5.10.0
     gatsby-plugin-mdx: ^5.11.0
     gatsby-plugin-sharp: ^5.11.0
-    gatsby-plugin-theme-ui: ~0.15.3
+    gatsby-plugin-theme-ui: ^0.16.0
     gatsby-remark-images: ^7.11.0
     gatsby-remark-mermaid: ^4.0.0
     gatsby-source-filesystem: ^5.11.0
@@ -4198,13 +4196,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@theme-ui/color@npm:~0.15.3":
-  version: 0.15.4
-  resolution: "@theme-ui/color@npm:0.15.4"
+"@theme-ui/color@npm:^0.16.0":
+  version: 0.16.0
+  resolution: "@theme-ui/color@npm:0.16.0"
   dependencies:
-    "@theme-ui/css": ^0.15.4
+    "@theme-ui/css": ^0.16.0
     polished: ^4.0.5
-  checksum: f0d3c0d4e839cd12a77800d91297372569f4b3063ff676ab45ddb5298db81e9cb5ba892d552e2324eafcf6cfe43698b3624f7685a883ed3671bdb8ce72541faa
+  checksum: e12fb9bbe714c324e7bb4ff9ee5c05e63c967c682760ab1f77e928d6a3d66887a98b690c36b190c4c5574676352ef28beb68cd84beb3eedbb2801c528f1dd051
   languageName: node
   linkType: hard
 
@@ -4226,19 +4224,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@theme-ui/core@npm:^0.15.4":
-  version: 0.15.4
-  resolution: "@theme-ui/core@npm:0.15.4"
-  dependencies:
-    "@theme-ui/css": ^0.15.4
-    deepmerge: ^4.2.2
-  peerDependencies:
-    "@emotion/react": ^11
-    react: ">=18"
-  checksum: e8f5e3da2e11aa425bfc1519e5528f13ba3c7e917b207d66367c11b0fe6bd2a04a9fa757d0e6980febf70f8de5b2406bf04461f6797f175ce4cb7484431e0132
-  languageName: node
-  linkType: hard
-
 "@theme-ui/core@npm:^0.16.0":
   version: 0.16.0
   resolution: "@theme-ui/core@npm:0.16.0"
@@ -4249,17 +4234,6 @@ __metadata:
     "@emotion/react": ^11.11.1
     react: ">=18"
   checksum: 27f41ae0291229bd91990150bfb053f623c68eea8a17523f3ee5e7748ab752b3241ac8d4dcdeead89d2d1a0f2f3f1df38a1a593feeb4753ccf415cb15d697dd3
-  languageName: node
-  linkType: hard
-
-"@theme-ui/css@npm:^0.15.4":
-  version: 0.15.4
-  resolution: "@theme-ui/css@npm:0.15.4"
-  dependencies:
-    csstype: ^3.0.10
-  peerDependencies:
-    "@emotion/react": ^11
-  checksum: 6e789967fdc7559b7eabf74f99a33d75ac282cabbd206d757f3e4d6e214a6229f4af0d30a791a7e1a7235fb0d002988f9b4c11c49698b257f84d04ff70ff54e6
   languageName: node
   linkType: hard
 
@@ -4287,26 +4261,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@theme-ui/mdx@npm:~0.15.3":
-  version: 0.15.4
-  resolution: "@theme-ui/mdx@npm:0.15.4"
+"@theme-ui/mdx@npm:^0.16.0":
+  version: 0.16.0
+  resolution: "@theme-ui/mdx@npm:0.16.0"
   dependencies:
-    "@theme-ui/core": ^0.15.4
-    "@theme-ui/css": ^0.15.4
+    "@theme-ui/core": ^0.16.0
+    "@theme-ui/css": ^0.16.0
   peerDependencies:
-    "@emotion/react": ^11
+    "@emotion/react": ^11.11.1
     "@types/mdx": ^2.0.2
     react: ">=18"
-  checksum: d6ae030cb132a28a8bb0e2ae0a0c6ff128fae6042f7757e8e6da57615099eb62fc5aa47b4ed402c2b4bfebd0d2a0580231cbfad5988a895c98934b3ad66dd2d5
+  checksum: 04a6f66fb08aa6f1ac8d1da67e4b2f21a243a86316bf154d2cfc5598190b4a45513b03486aed8032554e446af1083f42bdd041cee1ae2edff6acd744727b5fcc
   languageName: node
   linkType: hard
 
-"@theme-ui/preset-tailwind@npm:0.15.3":
-  version: 0.15.3
-  resolution: "@theme-ui/preset-tailwind@npm:0.15.3"
+"@theme-ui/preset-tailwind@npm:^0.16.0":
+  version: 0.16.0
+  resolution: "@theme-ui/preset-tailwind@npm:0.16.0"
   peerDependencies:
-    "@theme-ui/css": ^0.15.3
-  checksum: 77de2165291bf8d92c53ea05ff4255da67e21b40f2db31cb122498d759417b03b19121b3f9f0613b1e5a1839278e7fe0856d316ef186adfb1dee6e740dda9917
+    "@theme-ui/css": ^0.16.0
+  checksum: 1c99df54e7b449347f1a4df553d750bf03e210507b22edc8e1980b2d5c274b475317a2f5dd2ad7f7c601a0f54f598ac9e79bd7ee6f159dfe2b8c577d5d035763
   languageName: node
   linkType: hard
 
@@ -4904,15 +4878,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:18":
-  version: 18.2.7
-  resolution: "@types/react-dom@npm:18.2.7"
-  dependencies:
-    "@types/react": "*"
-  checksum: e02ea908289a7ad26053308248d2b87f6aeafd73d0e2de2a3d435947bcea0422599016ffd1c3e38ff36c42f5e1c87c7417f05b0a157e48649e4a02f21727d54f
-  languageName: node
-  linkType: hard
-
 "@types/react-dom@npm:^18.0.0, @types/react-dom@npm:^18.2.4":
   version: 18.2.4
   resolution: "@types/react-dom@npm:18.2.4"
@@ -4930,17 +4895,6 @@ __metadata:
     "@types/scheduler": "*"
     csstype: ^3.0.2
   checksum: f155256171a2d701eb962a1d3aa2a1c9ee36d9dd4a4aecb911d29e50717aab1a76914aef25242665147c455b9e8d081d1a60275d13ca81075c148ebd6607414a
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:18":
-  version: 18.2.18
-  resolution: "@types/react@npm:18.2.18"
-  dependencies:
-    "@types/prop-types": "*"
-    "@types/scheduler": "*"
-    csstype: ^3.0.2
-  checksum: 2e0d75de2b618e76780019e52478b1bec2b015a9187aea30f84518c0c3ddc639055bdfea50864aece937bad0cb0544d0100b80d30f5461e72fbc1c3c0be8b140
   languageName: node
   linkType: hard
 
@@ -11264,18 +11218,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-theme-ui@npm:~0.15.3":
-  version: 0.15.4
-  resolution: "gatsby-plugin-theme-ui@npm:0.15.4"
+"gatsby-plugin-theme-ui@npm:^0.16.0":
+  version: 0.16.0
+  resolution: "gatsby-plugin-theme-ui@npm:0.16.0"
   peerDependencies:
-    "@emotion/react": ^11
+    "@emotion/react": ^11.11.1
     "@mdx-js/react": ^1 || ^2
-    "@theme-ui/css": ^0.15.4
-    "@theme-ui/mdx": ^0.15.4
+    "@theme-ui/css": ^0.16.0
+    "@theme-ui/mdx": ^0.16.0
     gatsby: ^4 || ^5
     react: ">=18"
-    theme-ui: ^0.15.4
-  checksum: b2c56bccf9aad5ae81e1b772d606959dc15a43d706e9f5f3ef44c630c4ee84912fc546a776455215fbf2fe0d52ae9d47bf15162f4b0ab98f14beb0d2e72de343
+    theme-ui: ^0.16.0
+  checksum: 23ef22378a158448dd1452a6f23a74c35773ea090c0bfd75110a33ab612e5783ba419644091104dbe4abc252b2ce93f6dc06a918e5e5e283acedfe18a8592278
   languageName: node
   linkType: hard
 

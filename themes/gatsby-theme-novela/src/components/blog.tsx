@@ -1,4 +1,4 @@
-/** @jsxImportSource theme-ui */
+/** @jsx jsx */
 import { jsx, Heading, Flex } from "theme-ui"
 import { HeadFC, Link } from "gatsby"
 import Layout from "./layout"
@@ -6,6 +6,7 @@ import Listing from "./listing"
 import useMinimalBlogConfig from "../hooks/use-minimal-blog-config"
 import replaceSlashes from "../utils/replaceSlashes"
 import Seo from "./seo"
+import { ListingProps } from "../types/types"
 
 export type Props = {
   data: {
@@ -28,6 +29,8 @@ export type MBBlogProps = {
       slug: string
     }[]
   }[]
+  className?: string
+  showTags?: boolean
 }
 
 const Blog = ({ ...props }: Props) => {
@@ -35,7 +38,7 @@ const Blog = ({ ...props }: Props) => {
   const {
     data: { allPost },
   } = props
-  const posts: MBBlogProps = allPost.nodes;
+  const posts: ListingProps = allPost.nodes;
 
   return (
     <Layout {...props}>

@@ -27,13 +27,13 @@
     "@lekoarts/themes-utils": "^3.0.0",
     "@mdx-js/react": "^2.3.0",
     "@playwright/test": "^1.36.2",
-    "@theme-ui/color": "~0.15.3",
-    "@theme-ui/mdx": "~0.15.3",
-    "@theme-ui/preset-tailwind": "0.15.3",
+    "@theme-ui/color": "^0.16.0",
+    "@theme-ui/mdx": "^0.16.0",
+    "@theme-ui/preset-tailwind": "^0.16.0",
     "gatsby-plugin-catch-links": "^5.10.0",
     "gatsby-plugin-mdx": "^5.11.0",
     "gatsby-plugin-sharp": "^5.11.0",
-    "gatsby-plugin-theme-ui": "~0.15.3",
+    "gatsby-plugin-theme-ui": "^0.16.0",
     "gatsby-remark-images": "^7.11.0",
     "gatsby-remark-mermaid": "^4.0.0",
     "gatsby-source-filesystem": "^5.11.0",
@@ -56,9 +56,5 @@
   "homepage": "https://themes.lekoarts.de",
   "engines": {
     "node": ">=18.0.0"
-  },
-  "devDependencies": {
-    "@types/react": "18",
-    "@types/react-dom": "18"
   }
 }
