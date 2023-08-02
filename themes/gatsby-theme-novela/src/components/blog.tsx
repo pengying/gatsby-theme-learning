@@ -1,4 +1,4 @@
-/** @jsx jsx */
+/** @jsxImportSource theme-ui */
 import { jsx, Heading, Flex } from "theme-ui"
 import { HeadFC, Link } from "gatsby"
 import Layout from "./layout"

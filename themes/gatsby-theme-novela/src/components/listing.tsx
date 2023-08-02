@@ -1,23 +1,24 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import BlogListItem from "./blog-list-item"
+import { ListingProps } from "../types/types"
 
-type ListingProps = {
-  posts: {
-    slug: string
-    title: string
-    date: string
-    excerpt: string
-    description: string
-    timeToRead?: number
-    tags?: {
-      name: string
-      slug: string
-    }[]
-  }[]
-  className?: string
-  showTags?: boolean
-}
+// type ListingProps = {
+//   posts: {
+//     slug: string
+//     title: string
+//     date: string
+//     excerpt: string
+//     description: string
+//     timeToRead?: number
+//     tags?: {
+//       name: string
+//       slug: string
+//     }[]
+//   }[]
+//   className?: string
+//   showTags?: boolean
+// }
 
 const Listing = ({ posts, className = ``, showTags = true }: ListingProps) => (
   <section sx={{ mb: [5, 6, 7] }} className={className}>

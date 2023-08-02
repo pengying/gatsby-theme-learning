@@ -42,7 +42,7 @@
     "prism-react-renderer": "^1.3.5",
     "reading-time": "^1.5.0",
     "remark-gfm": "^3.0.1",
-    "theme-ui": "^0.15.3"
+    "theme-ui": "^0.16.0"
   },
   "keywords": [
     "gatsby",
@@ -56,5 +56,9 @@
   "homepage": "https://themes.lekoarts.de",
   "engines": {
     "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "18",
+    "@types/react-dom": "18"
   }
 }
